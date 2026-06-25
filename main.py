@@ -1,12 +1,17 @@
-from screenshot import take_screenshot
+from hotkey import start_hotkey_listener
 
 
 def main():
-    print("🚀 Scout is starting...")
 
-    image = take_screenshot()
+    print("=" * 40)
+    print("🛰️  Scout is running...")
+    print("Press Command + Shift + S")
+    print("Press Ctrl + C to quit")
+    print("=" * 40)
 
-    print(f"Image saved as: {image}")
+    listener = start_hotkey_listener()
+
+    listener.join()
 
 
 if __name__ == "__main__":
