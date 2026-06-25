@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Scout generated screenshots
+screen.png
+screenshot_*.png
